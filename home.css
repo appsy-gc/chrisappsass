@@ -6,9 +6,7 @@
     --freshPink: #FA5373;
     --fontLight: 300;
     --fontRegular: 400;
-
-    /* Global Parameters */
-    box-sizing: border-box;
+    --lightBar: 0 0 8px 0 white;
 }
 
 /* Main Styling Section */
@@ -45,11 +43,11 @@ nav {
     display: flex;
     justify-content: flex-end;
     background-color: var(--darkBlue);
-    box-shadow: 0 0 30px 5px white;
+    box-shadow: var(--lightBar);
 }
 
 nav div {
-    padding: 10px 20px;
+    padding: 5px 20px;
     margin: 10px;
     background-color: var(--freshPink);
     border-radius: 10px;
@@ -68,11 +66,82 @@ nav div:hover {
 
 nav div:active {
     background-color: white;
-    color: var(--freshPink) !important;
+    color: var(--freshPink);
 }
 
 nav div:active a {
-    color: var(--freshPink) !important;
+    color: var(--freshPink);
+}
+
+main {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.feature {
+    align-content: center;
+    width: 90vw;
+    max-width: 450px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.main-img {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 3px 3px 3px var(--freshPink);
+}
+
+.main-img img {
+    width: 90%;
+    box-shadow: var(--lightBar);
+}
+
+.one, .two, .three {
+    display: grid;
+    /* height: 800px; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    background-color: var(--lightBrown);
+    box-shadow: var(--lightBar);
+}
+
+.title {
+    z-index: 2;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--freshPink);
+    box-shadow: 2px 3px 3px 0 var(--freshPink);
+    color: white;
+    text-align: right;
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+}
+
+.work-title {
+    font-size: 1.1rem;
+    font-weight: var(--fontRegular)
+}
+
+.graphic {
+    text-align: center;
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+}
+
+.graphic img {
+    z-index: -1;
+    width: 90%;
+}
+
+.text {
+    margin: 5px;
+    grid-column: 1 / -1;
+    grid-row: 3 / -1;
+    line-height: 1.5;
 }
 
 footer {
@@ -83,7 +152,7 @@ footer {
     background-color: var(--darkBlue);
     color: white;
     padding: 10px;
-    box-shadow: 0 10px 30px 10px white;
+    box-shadow: var(--lightBar);
 }
 
 footer div {
@@ -96,7 +165,7 @@ footer div {
 }
 
 .fa-brands {
-    transform: scale(2);
+    transform: scale(1.5);
 }
 
 .contact {
@@ -104,6 +173,9 @@ footer div {
     flex: 2 200px;
 }
 
-.contact span {
-    font-size: 1.2rem;
+@media screen and (min-width: 1035px) {
+    .one, .two, .three {
+        min-height: 620px;
+        align-content: flex-start;
+    }
 }
