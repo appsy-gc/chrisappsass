@@ -14,8 +14,12 @@
 <body>
     <!-- grouped header and main for ideal flex spacing -->
     <div class="header-main">
+
+        <!-- header -->
         <header>
             <div class="header-logo"><a href="index.html"><img src="images/sitelogo.png"></a></div>
+            
+            <!-- nav bar -->
             <nav>
                 <div class="home"><a href="index.html">HOME</a></div>
                 <div class="about"><a href="html/contact.html">CONTACT</a></div>
@@ -23,40 +27,53 @@
         </header>
     
         <main>
+            <!-- top feature image -->
             <div class="feature main-img"><h1>Who is Chris Apps?</h1><img src="images/selfportrait.JPG" alt="picture of chris"></div>
             
-            <article class="feature one">
-                <section class="intro title">INTRODUCTION</section>
-                <section class="intro graphic"><img src="images/intro-graphic.jpeg" alt="guy in home office with musical equipment and tech"></section>
-                <section class="intro text"><p>Hi, I’m Chris, but you can call me Appsy! I’m from the sunny Gold Coast, where I work remotely as a Training Operations Manager and Instructional Designer for an RTO.<br><br> 
-                When I’m not busy shaping the future of education, you’ll find me jamming on my guitar or producing music in my studio. I’m here to explore a side gig that might just lead to an exciting career change. 
-                <br><br>
-                And here’s a fun fact about me: despite all my adventures, I’ve never broken a bone! I’m working from my trusty Mac and ready to bring my talents to the next level.</p></section>
-            </article>
-            
-            <article class="feature two"><section class="work-skills title">WORK-RELATED SKILLS</section>
-                <section class="work-skills graphic"><img src="images/skills-graphic.jpeg" alt="classroom focusing on technology"></section>
-                <section class="work-skills text"><p>I have a strong background in training operations, project management, and instructional design. Over the years, I’ve honed my skills in leading teams, managing accredited programs, and implementing innovative learning solutions. I excel at driving organisational success through strategic planning and effective collaboration across departments. My expertise spans compliance, end-to-end learning design, and integrating technology and AI into training programs, all aimed at boosting operational efficiency and enhancing student satisfaction. Whether I’m pioneering new systems or optimising existing processes, I’m committed to delivering high-impact results that elevate both teams and organisations.</p></section></article>
-            
+            <!-- special container to flex wrap child containers while keeping the main image top and center -->
+            <div class="features">
+
+                <!-- introduction area -->
+                <article class="feature one">
+                    <section class="intro title">INTRODUCTION</section>
+                    <section class="intro graphic"><img src="images/intro-graphic.jpeg" alt="guy in home office with musical equipment and tech"></section>
+                    <section class="intro text"><p>Hi, I’m Chris, but you can call me Appsy! I’m from the Gold Coast, where I work remotely as a Training Operations Manager and Instructional Designer for an RTO.<br><br> 
+                    When I’m not busy shaping the future of education, you’ll find me jamming on my guitar or producing music in my studio. I’m here to explore a side gig that might just lead to an exciting career change. 
+                    <br><br>
+                    And here’s a fun fact about me: despite all my adventures, I’ve never broken a bone! I’m working from my trusty Mac and ready to bring my talents to the next level.</p>
+                    </section>
+                </article>
+                
+                <!-- work-related skills area -->
+                <article class="feature two"><section class="work-skills title">WORK-RELATED SKILLS</section>
+                    <section class="work-skills graphic"><img src="images/skills-graphic.jpeg" alt="classroom focusing on technology"></section>
+                    <section class="work-skills text"><p>I have a strong background in training operations, project management, and instructional design. Over the years, I’ve honed my skills in leading teams, managing accredited programs, and implementing innovative learning solutions. I excel at driving organisational success through strategic planning and effective collaboration across departments. My expertise spans compliance, end-to-end learning design, and integrating technology and AI into training programs, all aimed at boosting operational efficiency and enhancing student satisfaction. Whether I’m pioneering new systems or optimising existing processes, I’m committed to delivering high-impact results that elevate both teams and organisations.</p>
+                    </section>
+                </article>
+                
+                <!-- work history area -->
                 <article class="feature three"><section class="work-history title">WORK HISTORY</section>
-                <section class="work-history graphic"><img src="images/history-graphic.jpeg" alt="jet flying low over desert"></section>
-                <section class="work-history text">
-                    <ul>
-                        <li><span class="work-title">Training Operations Manager</span> (Oct 2023 - Present)</li>
-                        <li><span class="work-title">Massage Training Manager</span> (Nov 2022 - Oct 2023)</li>
-                        <li><span class="work-title">Program Coordinator</span> (May 2021 - Nov 2022)</li>
-                        <li><span class="work-title">Master Coach</span> (Apr 2019 - May 2021)</li>
-                        <li><span class="work-title">Trainer and Assessor</span> (Jul 2015 - Apr 2019)</li>
-                        <li><span class="work-title">Personal Trainer & Remedial Therapist</span> (Aug 2014 - May 2021)</li>
-                        <li><span class="work-title">Logistics Coordinator</span> (Aug 2013 - Jan 2015)</li>
-                        <li><span class="work-title">Procurement Officer</span> (Nov 2008 - Aug 2013)</li>
-                        <li><span class="work-title">Aircraft Technician</span> (Jun 2002 - Jun 2008)</li>
-                        
-                    </ul>
-                </section></article>
+                    <section class="work-history graphic"><img src="images/history-graphic.jpeg" alt="jet flying low over desert"></section>
+                    <section class="work-history text">
+                        <ul>
+                            <li><span class="work-title">Training Operations Manager</span> (Oct 2023 - Present)</li>
+                            <li><span class="work-title">Massage Training Manager</span> (Nov 2022 - Oct 2023)</li>
+                            <li><span class="work-title">Program Coordinator</span> (May 2021 - Nov 2022)</li>
+                            <li><span class="work-title">Master Coach</span> (Apr 2019 - May 2021)</li>
+                            <li><span class="work-title">Trainer and Assessor</span> (Jul 2015 - Apr 2019)</li>
+                            <li><span class="work-title">Personal Trainer & Remedial Therapist</span> (Aug 2014 - May 2021)</li>
+                            <li><span class="work-title">Logistics Coordinator</span> (Aug 2013 - Jan 2015)</li>
+                            <li><span class="work-title">Procurement Officer</span> (Nov 2008 - Aug 2013)</li>
+                            <li><span class="work-title">Aircraft Technician</span> (Jun 2002 - Jun 2008)</li>
+                            
+                        </ul>
+                    </section>
+                </article>
+            </div>
         </main>
     </div>
 
+    <!-- footer -->
     <footer>
         <div class="linkedin-logo"><i class="fa-brands fa-linkedin"></i></div>
         <div class="instagram-logo"><i class="fa-brands fa-instagram"></i></div>
