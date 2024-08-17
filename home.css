@@ -1,23 +1,23 @@
 :root {
     /* Global Variables */
-    --lightBrown: #F6C582;
-    --lightBlue: #42C1C5;
-    --darkBlue: #33687D;
-    --freshPink: #FA5373;
     --fontLight: 300;
     --fontRegular: 400;
+    --darkBlue: #33687D;
+    --lightBlue: #42C1C5;
+    --freshPink: #FA5373;
+    --lightBrown: #F6C582;
     --lightBar: 0 0 8px 0 white;
 }
 
 /* Main Styling Section */
 body {
-    font-family: "Ubuntu", sans-serif;
+    margin: 0;
     display: flex;
+    height: 100vh;
     flex-direction: column;
     justify-content: space-between;
+    font-family: "Ubuntu", sans-serif;
     background-color: var(--lightBlue);
-    height: 100vh;
-    margin: 0;
 }
 
 .header-main {
@@ -36,22 +36,23 @@ header {
 
 .header-logo img {
     width: 80px;
-    padding: 5px;
+    padding: 15px 0 10px 15px;
 }
 
 nav {
     display: flex;
+    padding: 5px 0;
     justify-content: flex-end;
-    background-color: var(--darkBlue);
     box-shadow: var(--lightBar);
+    background-color: var(--darkBlue);
 }
 
 nav div {
-    padding: 5px 20px;
     margin: 10px;
-    background-color: var(--freshPink);
+    padding: 5px 20px;
     border-radius: 10px;
     border: 2px solid var(--darkBlue);
+    background-color: var(--freshPink);
 }
 
 nav a {
@@ -60,8 +61,8 @@ nav a {
 }
 
 nav div:hover {
-    border: 2px solid white;
     cursor: pointer;
+    border: 2px solid white;
 }
 
 nav div:active {
@@ -150,21 +151,21 @@ main {
 
 footer {
     display: flex;
-    flex-flow: wrap;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--darkBlue);
-    color: white;
     padding: 10px;
+    color: white;
+    flex-flow: wrap;
     box-shadow: var(--lightBar);
+    justify-content: space-around;
+    background-color: var(--darkBlue);
 }
 
 footer div {
-    padding: 10px 0;
+    padding: 10px;
 }
 
 .linkedin-logo, .instagram-logo {
     flex: 1 50px;
+    max-width: 100px;
     text-align: center;
 }
 
@@ -173,8 +174,8 @@ footer div {
 }
 
 .contact {
-    text-align: center;
     flex: 2 200px;
+    text-align: left;
 }
 
 @media screen and (min-width: 1035px) {
@@ -183,10 +184,3 @@ footer div {
         align-content: flex-start;
     }
 }
-
-/* @media screen and (max-width: 768px) and (orientation: porttrait) {
-    
-    body {
-        transform: rotate(0deg);
-    }
-} */
