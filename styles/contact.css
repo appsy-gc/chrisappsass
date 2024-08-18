@@ -1,7 +1,5 @@
 :root {
     /* Global Variables */
-    --fontLight: 300;
-    --fontRegular: 400;
     --darkBlue: #33687D;
     --lightBlue: #42C1C5;
     --freshPink: #FA5373;
@@ -10,6 +8,8 @@
     
     box-sizing: border-box;
 }
+
+/* Main styling section */
 
 form {
     width: 70vw;
@@ -50,13 +50,13 @@ textarea {
 }
 
 .form-title {
-    text-align: center;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .btn-div {
-    text-align: center;
     margin-top: 10px;
+    text-align: center;
 }
 
 button:hover {

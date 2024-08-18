@@ -1,7 +1,5 @@
 :root {
     /* Global Variables */
-    --fontLight: 300;
-    --fontRegular: 400;
     --darkBlue: #33687D;
     --lightBlue: #42C1C5;
     --freshPink: #FA5373;
@@ -34,11 +32,17 @@ header {
 
 .header-logo {
     display: flex;
+    align-items: center;
 }
 
 .header-logo img {
     width: 80px;
     padding: 15px;
+}
+
+.header-logo h1 {
+    font-size: 1.75rem;
+    color: var(--darkBlue);
 }
 
 nav {
@@ -121,9 +125,9 @@ main {
     padding: 5px;
     color: white;
     grid-row: 1 / 2;
+    grid-column: 2 / -1;
     text-align: right;
     border-radius: 5px;
-    grid-column: 2 / -1;
     background-color: var(--freshPink);
     box-shadow: 2px 3px 3px 0 var(--freshPink);
 }
@@ -135,8 +139,8 @@ main {
 
 .graphic {
     grid-row: 2 / 3;
-    text-align: center;
     grid-column: 1 / -1;
+    text-align: center;
 }
 
 .graphic img {
@@ -146,8 +150,8 @@ main {
 
 .text {
     margin: 5px;
-    grid-row: 3 / -1;
     line-height: 1.5;
+    grid-row: 3 / -1;
     grid-column: 1 / -1;
 }
 
@@ -188,6 +192,7 @@ footer div {
     text-align: left;
 }
 
+/* Animation keyframe to swell and rotate */
 @keyframes socials {
     0% { 
         transform: scale(1) rotate(0deg); 
@@ -197,17 +202,12 @@ footer div {
     }
 }
 
+/* Better placement of elements on wider screens. 1035px ideal to avoid noticeable width changes in form width when it locks */
 @media screen and (min-width: 1035px) {
-    nav {
-        justify-content: center;
-    }
-    
+      
     .one, .two, .three {
         min-height: 620px;
         align-content: flex-start;
     }
 
-    .header-logo {
-        justify-content: space-around;
-    }
 }
