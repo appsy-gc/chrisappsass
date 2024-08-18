@@ -7,6 +7,8 @@
     --freshPink: #FA5373;
     --lightBrown: #F6C582;
     --lightBar: 0 0 8px 0 white;
+
+    box-sizing: border-box;
 }
 
 /* Main Styling Section */
@@ -36,7 +38,7 @@ header {
 
 .header-logo img {
     width: 80px;
-    padding: 15px 0 10px 15px;
+    padding: 15px;
 }
 
 nav {
@@ -87,17 +89,17 @@ main {
 }
 
 .feature {
-    align-content: center;
     width: 90vw;
-    max-width: 450px;
-    padding: 10px;
     margin: 20px;
+    padding: 10px;
+    max-width: 450px;
+    align-content: center;
 }
 
 .main-img {
-    text-align: center;
     color: white;
     font-size: 1.5rem;
+    text-align: center;
     text-shadow: 3px 3px 3px var(--freshPink);
 }
 
@@ -108,22 +110,22 @@ main {
 
 .one, .two, .three {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    box-shadow: var(--lightBar);
     grid-template-rows: auto auto auto;
     background-color: var(--lightBrown);
-    box-shadow: var(--lightBar);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .title {
     z-index: 2;
     padding: 5px;
+    color: white;
+    grid-row: 1 / 2;
+    text-align: right;
     border-radius: 5px;
+    grid-column: 2 / -1;
     background-color: var(--freshPink);
     box-shadow: 2px 3px 3px 0 var(--freshPink);
-    color: white;
-    text-align: right;
-    grid-column: 2 / -1;
-    grid-row: 1 / 2;
 }
 
 .work-title {
@@ -132,21 +134,21 @@ main {
 }
 
 .graphic {
+    grid-row: 2 / 3;
     text-align: center;
     grid-column: 1 / -1;
-    grid-row: 2 / 3;
 }
 
 .graphic img {
-    z-index: -1;
     width: 90%;
+    z-index: -1;
 }
 
 .text {
     margin: 5px;
-    grid-column: 1 / -1;
     grid-row: 3 / -1;
     line-height: 1.5;
+    grid-column: 1 / -1;
 }
 
 footer {
@@ -173,14 +175,26 @@ footer div {
     transform: scale(1.5);
 }
 
+.linkedin-logo a, .instagram-logo a {
+    color: white;
+}
+
 .contact {
     flex: 2 200px;
     text-align: left;
 }
 
 @media screen and (min-width: 1035px) {
+    nav {
+        justify-content: center;
+    }
+    
     .one, .two, .three {
         min-height: 620px;
         align-content: flex-start;
+    }
+
+    .header-logo {
+        justify-content: space-around;
     }
 }

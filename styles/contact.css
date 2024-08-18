@@ -1,42 +1,44 @@
 :root {
     /* Global Variables */
-    --lightBrown: #F6C582;
-    --lightBlue: #42C1C5;
-    --darkBlue: #33687D;
-    --freshPink: #FA5373;
     --fontLight: 300;
     --fontRegular: 400;
+    --darkBlue: #33687D;
+    --lightBlue: #42C1C5;
+    --freshPink: #FA5373;
+    --lightBrown: #F6C582;
     --lightBar: 0 0 8px 0 white;
+    
     box-sizing: border-box;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    background-color: var(--lightBrown);
-    box-shadow: var(--lightBar);
-    margin-top: 50px;
     width: 70vw;
+    display: flex;
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    box-shadow: var(--lightBar);
+    background-color: var(--lightBrown);
 }
 
 .form-title {
-    padding: 5px;
-    border-radius: 5px;
-    background-color: var(--freshPink);
-    box-shadow: 2px 3px 3px 0 var(--freshPink);
-    color: white;
-    transform: translate(-20px,-40px);
     width: 80%;
+    padding: 5px;
+    color: white;
     max-width: 300px;
     min-width: 150px;
+    border-radius: 5px;
+    transform: translate(-20px,-40px);
+    background-color: var(--freshPink);
+    box-shadow: 2px 3px 3px 0 var(--freshPink);
 }
 
 input, textarea {
-    font-family: "Ubuntu", sans-serif;
     margin: 5px;
     padding: 5px;
     border: none;
+    font-family: "Ubuntu", sans-serif;
 }
 
 input {
@@ -58,8 +60,8 @@ textarea {
 }
 
 button:hover {
-    border: 2px solid white;
     cursor: pointer;
+    border: 2px solid white;
 }
 
 button:active {
@@ -68,13 +70,13 @@ button:active {
 }
 
 button {
-    padding: 10px 20px;
     margin: 10px;
-    background-color: var(--freshPink);
-    border-radius: 10px;
     border: none;
     color: white;
     font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--freshPink);
     border: 2px solid var(--lightBrown);
 }
 
