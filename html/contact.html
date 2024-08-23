@@ -34,11 +34,18 @@
                     CONTACT FORM
                 </div>
 
-                <!-- Placeholders used instead of labels for minimalism -->
-                <input type="text" placeholder="Name (required)" id="nameInput" required>
-                <input type="email" placeholder="Email (required)" id="emailInput" required>
-                <input type="tel" placeholder="Mobile" id="mobileInput">
-                <textarea type="text" placeholder="Message (required)" id="messageInput" required></textarea>
+                <!-- form labels and inputs-->
+                <label for="nameInput">Name (required)</label>
+                <input type="text" id="nameInput" required>
+
+                <label for="emailInput">Email (required)</label>
+                <input type="email" id="emailInput" required>
+
+                <label for="mobileInput">Mobile</label>
+                <input type="tel" id="mobileInput">
+
+                <label id="messageArea" for="messageInput">Message (required)</label>
+                <textarea type="text" id="messageInput" required></textarea>
                 
                 <div class="btn-div">
                     <button type="button">SUBMIT</button>

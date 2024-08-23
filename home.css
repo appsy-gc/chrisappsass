@@ -1,5 +1,5 @@
 :root {
-    /* Global Variables */
+    /* Variables */
     --darkBlue: #33687D;
     --lightBlue: #42C1C5;
     --freshPink: #FA5373;
@@ -61,7 +61,8 @@ nav div {
     background-color: var(--freshPink);
 }
 
-nav a {
+nav a,
+main a {
     color: white;
     text-decoration: none;
 }
@@ -155,6 +156,10 @@ main {
     grid-column: 1 / -1;
 }
 
+#bottomAnchor {
+    padding-bottom: 10px;
+}
+
 footer {
     display: flex;
     padding: 10px;
@@ -208,6 +213,14 @@ footer div {
     .one, .two, .three {
         min-height: 620px;
         align-content: flex-start;
+    }
+
+}
+
+@media screen and (min-width: 1545px) {
+      
+    main a {
+        display: none;
     }
 
 }
