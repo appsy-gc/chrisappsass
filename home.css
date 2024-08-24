@@ -27,6 +27,9 @@ body {
 }
 
 header {
+    top: 0;
+    z-index: 1000;
+    position: sticky;
     background-color: var(--lightBrown);
 }
 
@@ -161,9 +164,12 @@ main {
 }
 
 footer {
+    bottom: 0;
     display: flex;
+    z-index: 1000;
     padding: 10px;
     color: white;
+    position: sticky;
     flex-flow: wrap;
     box-shadow: var(--lightBar);
     justify-content: space-around;
@@ -223,4 +229,11 @@ footer div {
         display: none;
     }
 
+    header {
+        position: static;
+    }
+
+    footer {
+        position: static;
+    }
 }
